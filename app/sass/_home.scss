@@ -1,0 +1,45 @@
+/**
+ * This is the central home page
+ *
+ */
+@import '_mixins.scss';
+section#home {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    padding: 100px 20px 0;
+	@include responsive(phone) {
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+
+	}
+    div.content {
+        max-width: $siteWidth;
+        margin: 0 auto;
+        color: #000;
+    }
+.tout{
+	width: 100%;
+    position: relative;
+}
+    .elc-product-main {
+        display: flex;
+		
+    }
+
+    .elc-carousel {
+        flex: 1;
+    }
+
+    .elc-product-info {
+        display: flex;
+    }
+
+    .elc-product-details {
+        flex: 1;
+    }
+}

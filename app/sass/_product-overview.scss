@@ -1,0 +1,237 @@
+@import '_mixins.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.product-auto-replenish{
+	@include responsive(phone){
+	margin-left:35px;
+	margin-right:30px;
+	margin-bottom:5px;
+	}
+}
+.product-after-pay{
+@include responsive(phone){
+	margin-left:35px;
+	margin-right:30px;
+	margin-top:15px;
+	}
+}
+
+.product-promo-message{
+@include responsive(phone){
+	margin-left:35px;
+	margin-right:30px;
+	
+	}
+
+}
+.elc-product-installments-price-logo{
+	width:95px;
+	height: 20px;
+}
+.bMoWKss {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-left: 4px;
+    cursor: pointer;
+}
+.elc-product-full .elc-product-installments-price-open-modal {
+    background: 0 0;
+    padding: 0;
+    position: relative;
+    top: 4px;
+}
+
+#cars{
+	border: 1.5px solid black;
+    cursor: pointer;
+    display: block;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-left: 8px;
+    position: relative;
+    margin-bottom: 5px;
+	width: 80%;
+	letter-spacing: .05em;
+	padding:10px;
+	@include responsive(phone){
+		margin-left: 8%;
+	}
+}
+.product-price{
+	margin-bottom: 10px;
+	font-weight:bold;
+	@include responsive(phone){
+		margin-left:8%;
+	}
+}
+input[type="button"] {
+cursor: pointer;
+	font-size: 15px;
+    color: #040a2b;
+}
+.product-qty{
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+}
+p{
+font-weight:bold;
+font-size:12px;
+
+}
+.addBag{
+    background: #040a2b;
+    border-radius: unset;
+    font-family: AkzidenzGrotesk;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0;
+	height: 40px;
+    width: 133px;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	letter-spacing: 1.25px;
+	text-transform: uppercase;
+	margin-left:-2rem;
+	@include responsive(phone){
+		margin: auto;
+		}
+	}
+.buttons_added{
+	border-radius: 0;
+ margin: auto;
+    background: #fff;
+    width: 140px;
+    z-index: 1;
+	@include responsive(phone){
+		margin: auto;
+		}
+}
+input[type="number"]{
+	pointer-events: none; 
+	color: #040a2b;
+    font-family: AkzidenzGrotesk;
+    text-align: center;
+    font-size: 15px;
+}
+.input-text_qty_text{
+	pointer-events: none; 
+	
+	padding: 10px;
+    color: rgb(0, 0, 0);
+	width:60%;
+}
+
+#PLUS{
+	border-right: 1px solid #040a2b;
+	border-top: 1px solid #040a2b;
+	border-bottom: 1px solid #040a2b;
+    cursor: pointer;
+    padding: 0px 8px;
+    color: rgb(0, 0, 0);
+	 width: 30%;
+}
+#MINUS{ 
+	border-left: 1px solid #040a2b;
+	border-top: 1px solid #040a2b;
+	border-bottom: 1px solid #040a2b;
+	width: 30%;
+    cursor: pointer;
+    padding: 0px 8px;
+    color: rgb(0, 0, 0);
+	
+}
+p{
+	@include responsive(phone){
+		display:none;
+	}
+}
+.elc-product-overview {
+    width: 40%;
+	margin-left: 5rem ;
+	margin-right: 2rem ;
+	@include responsive(phone){
+		float:none;
+		width:100%;
+		margin:0;
+		padding:0;
+		margin-top:115%;
+		position:relative;
+	}
+
+  h4 {
+     font-family: Optima;
+	 font-size:2rem;
+	 letter-spacing: .4px;
+	 font-weight: lighter;
+	 display:block;
+	 margin-bottom: 10px;
+	@include responsive(phone){
+		display:inline-block;
+		font-size:21px;
+		margin-top:0;
+		margin-bottom: 8px;
+		margin-left:30px;
+		margin-right:30px;
+		line-height: 1.2;
+		position:relative;
+		
+	}
+  }
+
+
+  // Styles for stars
+  .product-review {
+  @include responsive(phone){
+	  margin:0;
+	  padding:0;
+	  margin-left:30px;
+	  margin-right:30px;
+  }
+    //empty stars
+	margin-bottom: 10px;
+    .stars-outer {
+      display: inline-block;
+      position: relative;
+      font-family: "Material Icons";
+      letter-spacing: -3px;
+    }
+
+    .stars-outer::before {
+      content: "\f0ec\f0ec\f0ec\f0ec\f0ec";
+      color: #7f7f7f;
+    }
+
+    //filled in stars
+    .stars-inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .stars-inner::before {
+      content: "\f0ec\f0ec\f0ec\f0ec\f0ec";
+      color: #000;
+    }
+  }
+  
+ .product-short-description{
+  margin-bottom: 10px;
+  @include responsive(phone){
+  overflow:hidden;
+	  margin:0;
+	  display:inline-block;
+	  margin-bottom: 10px;
+	  margin-top: 0;
+	  letter-spacing: .3px;
+	  margin-left: 30px;
+	  margin-right: 30px;
+  }
+ }
+}

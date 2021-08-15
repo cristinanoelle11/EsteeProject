@@ -1,0 +1,54 @@
+@import '_mixins.scss';
+.elc-product-attributes {
+	@include responsive(phone){
+		float: none;
+		margin: 0;
+		padding: 10px 30px 25px;
+		width: 100%;
+		position:relative;
+		display:block;
+		width:100%;
+		margin-top:-50px;
+	}
+	border: none;
+	display:flex;
+	margin-bottom:60px;
+	
+}
+.fourAttributes{
+	width:85%;
+	@include responsive(phone){
+		width:100%;
+	}
+}
+.product-attribute{
+	width:50%;
+	height:50%;
+	@include responsive(phone){
+		width:100%;
+		padding:10px;
+	}
+}
+
+.wordsAttribute{
+	font-size:1rem;
+	font-weight:lighter;
+	@include responsive(phone){
+		float:none;
+		width:100%;
+		margin:0;
+		padding:0;
+		display:flex;
+		flex-direction:column;
+	}
+}
+
+p{
+	font-family: AkzidenzGrotesk;
+}
+
+h3{
+	font-weight:bolder;
+	font-size:.8rem;
+	letter-spacing:.1em;
+}

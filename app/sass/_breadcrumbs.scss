@@ -1,0 +1,81 @@
+@import '_mixins.scss';
+
+
+elc-product-full .elc-breadcrumbs p {
+    border-bottom: 1px solid transparent;
+    color: #040a2b;
+    font-family: AkzidenzGroteskRegular;
+    font-size: 10px;
+    margin: 0 5px;
+    font: 15px/24px AkzidenzGrotesk;
+	
+}
+.elc-breadcrumbs{
+display:flex;
+justify-content:space-between;
+font-weight:thin;
+    
+    height: 20px;
+    margin: 0 5px 10px;
+    letter-spacing: .25px;
+	@include responsive(phone){
+		display:none;
+	}
+}
+a{
+	text-decoration: none;
+	
+}
+body {
+    font-size: 15px;
+    font-family: AkzidenzGrotesk;
+    letter-spacing: .05em;
+}
+ol {
+	margin: 0;
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+	position: relative;
+	
+}
+.iBUrHG{
+font-weight: lighter;
+padding-right:5px;
+margin-top:4px;
+}
+.eBfePo {
+font-weight: lighter;
+	padding-right:5px;
+    font-family: "Roboto Regular";
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    margin: 0px;
+    display: inline-block;
+    color: black;
+	
+	}
+.iXqFZS {
+    white-space: nowrap;
+    list-style-type: none;
+    padding: 0px 20px;
+	
+}
+li{
+   list-style: none;
+	
+}
+.fvXIe {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+	
+	}

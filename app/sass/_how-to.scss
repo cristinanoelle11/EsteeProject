@@ -1,0 +1,110 @@
+.titles{
+	margin-top:20px;
+    font-family: Optima;
+	padding:0 10px;
+	font-weight:lighter;
+	font-size:1.5rem;
+	display:inline-block;
+	letter-spacing: 0.25px;
+	margin-left:40px;
+	border-bottom: 1px #cccccc solid;
+}
+
+.elc-howTo{
+	display:flex;
+	@include responsive(phone){
+		display:block;
+	}
+}
+
+i.how-icon-plus::before {
+    content: "\002B";
+    color: black;
+	display:inline-block;
+	padding-left:30px;
+	font-weight: 400;
+    text-align: center;
+    font-size: 25px;
+    }
+	
+i.how-icon-minus::before {
+    content: "\002D";
+    color: black;
+	padding-left:30px;
+	display:inline-block;
+	font-weight: 400;
+    text-align: center;
+    font-size: 25px;
+    }
+	
+div.on{
+	display:block;
+}
+
+div.off{
+	display:none;
+}
+
+#checkboxHow {
+    display: none;
+   }
+   
+#checkboxHow:checked ~ nav ul {
+    max-height: 600px;         
+    transition: all 0.5s;
+    }
+	
+i.in-icon-plus::before {
+    content: "\002B";
+    color: black;
+	display:inline-block;
+	padding-left:30px;
+	font-weight: 400;
+    text-align: center;
+    font-size: 25px;
+    }
+	
+i.in-icon-minus::before {
+    content: "\002D";
+    color: black;
+	display:inline-block;
+	padding-left:30px;
+	font-weight: 400;
+    text-align: center;
+    font-size: 25px;
+    }
+	
+div.up{
+	display:block;
+}
+
+div.down{
+	display:none;
+}
+
+#checkboxIn {
+    display: none;
+    }
+	
+#checkboxIn:checked ~ nav ul {
+    max-height: 600px;         
+    transition: all 0.5s;
+    }
+	
+.howContainer{
+    color: #040a2b;
+    margin: 10px;
+	width:45%;
+	@include responsive(phone){
+		width:100%
+	}
+}
+
+.ingredientsContatiner{
+    color: #040a2b;
+    margin: 10px;
+	width:50%;	
+	@include responsive(phone){
+		width:100%;
+	}
+}

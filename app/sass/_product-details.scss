@@ -1,0 +1,108 @@
+@import '_mixins.scss';
+
+.elc-product-details {
+@include responsive(phone){
+		width:100%;
+		display:flex;
+		justify-content: flex-start;
+		margin:0;
+		flex-direction:row;
+		margin-top:80%;
+		margin:auto;
+		position:relative;
+		
+}
+
+}
+    h2 {
+		margin-top:20px;
+        font-family: Optima;
+		padding:0;
+		font-weight:lighter;
+		font-size:1.5rem;
+		text-align:center; 
+	 text-decoration-thickness: 1px;
+		@include responsive(phone){
+			margin:0;
+			padding:0;
+			float:none;
+			margin-top:10px;
+			margin-left:30%;
+			text-align:center;
+		}
+	
+    }
+	
+	display:flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+	
+	
+
+}
+.tab-list {  
+	border-bottom: 1px solid #ccc;
+  padding-left: 0;
+   display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+ 
+}
+.moreDescription1{
+	width:500px;
+	@include responsive(phone){
+		margin:0;
+		width:100%;
+		}
+}
+
+.moreDescription2{
+	width:500px;
+	@include responsive(phone){
+		margin:0;
+		width:100%;
+		}
+}
+.textand{
+	padding:10px;
+	margin-top:-350px;
+	display:inline-block;
+	@include responsive(phone){
+		word-wrap: break-word;
+		margin:0;
+	}
+}
+
+.react-player{
+	display:inline-block;
+	margin-left:520px;
+	margin-top:20px;
+	width:100px;
+	@include responsive(phone){
+		display:inline-block;
+		 background-color:pink;
+		 margin-left:0;
+		width:70px;
+		height:60%;
+		 
+		}
+}
+
+
+.tab-list-item {
+text-align:center;
+
+cursor: pointer;
+ 
+  list-style: none;
+  margin-bottom: -1px;
+  padding: 0.5rem 0.6rem;
+}
+
+.tab-list-active {
+cursor: pointer;
+color:white;
+  background-color: #040a2b;
+  border: solid #ccc;
+  border-width: 1px 1px 0 1px;
+}
